@@ -1,155 +1,96 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(to bottom, #66B2FF, #003366);
-  color: white;
-  padding-top: 60px;
-}
-
-#navbar {
-  background-color: black;
-  padding: 1rem;
-  text-align: center;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
-#navbar a {
-  margin: 0 15px;
-  color: white;
-  font-size: 18px;
-  transition: color 0.3s ease;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-#navbar a:hover {
-  color: gold;
-}
-
-#welcome-section {
-  padding: 80px 20px;
-  text-align: center;
-}
-
-#welcome-section h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-  font-weight: bold;
-}
-
-#welcome-section p {
-  font-size: 1.2rem;
-  margin: 0;
-  line-height: 1.6;
-}
-
-#projects {
-  padding: 50px 20px;
-  text-align: center;
-  position: relative;
-  z-index: 1;
-  background: linear-gradient(to bottom, #002244, #000C1A);
-}
-
-#projects h2 {
-  font-size: 2.5rem;
-  margin-bottom: 30px;
-  font-weight: bold;
-}
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  justify-items: center;
-}
-
-.project-tile {
-  background-color: white;
-  margin: 20px auto;
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  font-family: sans-serif;
   padding: 20px;
-  max-width: 350px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
 }
 
-.project-tile a {
-  text-decoration: none;
-  color: inherit;
+h1 {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 
-.project-tile h3 {
-  font-size: 20px;
-  font-weight: bold;
-  color: #007BFF;
-  transition: color 0.3s ease;
+h2 {
+  font-size: 30px;
 }
 
-.project-tile p {
-  font-size: 1rem;
-  color: #333;
+.established {
+  font-style: italic;
 }
 
-.project-tile:hover {
-  background-color: #006BB3;
-  transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+h1, h2, p {
+  text-align: center;
 }
 
-.project-tile:hover h3 {
-  color: white;
+.menu {
+  width: 80%;
+  background-color: burlywood;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 500px;
 }
 
-.project-tile:active {
-  background-color: #005494;
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-section {
-  max-width: 1200px;
-  margin: 0 auto;
+hr {
+  height: 2px;
+  background-color: brown;
+  border-color: brown;
 }
 
-@media (max-width: 768px) {
-  #navbar a {
-    font-size: 16px;
-    margin: 0 10px;
-  }
-
-  #projects h2 {
-    font-size: 2rem;
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .project-tile {
-    max-width: 90%;
-    margin: 10px;
-  }
+.bottom-line {
+  margin-top: 25px;
 }
 
-@media (max-width: 480px) {
-  #navbar a {
-    font-size: 14px;
-    margin: 0 5px;
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .project-tile {
-    max-width: 100%;
-    margin: 10px 0;
-  }
+h1, h2 {
+  font-family: Impact, serif;
 }
 
+.item p {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
 
+.flavor, .dessert {
+  text-align: left;
+  width: 75%;
+}
+
+.price {
+  text-align: right;
+  width: 25%;
+}
+
+/* FOOTER */
+
+footer {
+  font-size: 14px;
+}
+
+.address {
+  margin-bottom: 5px;
+}
+
+a {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: brown;
+}
+
+a:active {
+  color: brown;
+}
 
